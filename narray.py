@@ -12,3 +12,12 @@ print(B)
 print(np.ndim(B))
 print(B.shape)
 print(B.shape[0])
+
+# 行列の積の実装
+A = np.array([[1,2],[3,4]])
+print(A.shape)
+
+B = np.array([[5,6],[7,8]])
+print(B.shape)
+
+print(np.dot(A,B)) # 内積の計算
