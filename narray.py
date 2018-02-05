@@ -1,6 +1,7 @@
 # coding: UTF-8
 
 import numpy as np
+
 A = np.array([1,2,3,4])
 print(A)
 print(np.ndim(A)) # 配列の次元の取得
