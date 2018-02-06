@@ -12,7 +12,7 @@ print(sum_exp_a)
 y = exp_a / sum_exp_a
 print(y)
 
-def softmax(a):
+def notsoftmax(a):
     exp_a = np.exp(a)
     sum_exp_a = np.sum(exp_a)
     y = exp_a / sum_exp_a
@@ -25,3 +25,10 @@ c = np.max(a)
 print (a-c)
 
 print(np.exp(a-c)/np.sum(np.exp(a-c)))
+
+def softmax(a):
+    c = np.max(a)
+    exp_a = np.exp(a) #オーバーフロー対策
+    sum_exp_a = np.sum(exp_a)
+    y = exp_a / sum_exp_a
+    return y
