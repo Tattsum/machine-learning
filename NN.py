@@ -20,3 +20,13 @@ Z1 = sigmoid(A1)
 
 print(A1)
 print(Z1)
+
+W2 = np.array([[0.1,0.4],[0.2,0.5],[0.3,0.6]])
+B2 = np.array([0.1,0.2])
+
+print(Z1.shape)
+print(W2.shape)
+print(B2.shape)
+
+A2 = np.dot(Z1,W2) + B2
+Z2 = sigmoid(A2)
