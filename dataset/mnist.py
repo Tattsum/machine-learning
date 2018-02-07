@@ -35,7 +35,7 @@ def _download(file_name):
         return
 
     print("Downloding " + file_name + " ... ")
-    urllib.requset.urlretrieve(url_base + file_name,file_path)
+    urllib.request.urlretrieve(url_base + file_name,file_path)
     print("Done")
 
 def download_mnist():
