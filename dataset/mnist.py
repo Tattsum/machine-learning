@@ -1,7 +1,7 @@
 # coding: UTF-8
 
 try:
-    import urllib.requset
+    import urllib.request
 except ImportError:
     raise ImportError('You should use Python 3.x')
 
