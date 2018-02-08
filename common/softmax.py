@@ -19,7 +19,7 @@ def notsoftmax(a):
     return y
 
 a = np.array([1010,1000,990])
-print(np.exp(a))
+# print(np.exp(a))
 
 c = np.max(a)
 print (a-c)
