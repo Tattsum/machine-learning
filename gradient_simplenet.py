@@ -34,4 +34,7 @@ def f(W):
     return net.loss(x, t)
 
 dW = numerical_gradient(f, net.W)
-print(dW) 
+print(dW)
+
+f = lambda w: net.loss(x, t)
+dW = numerical_gradient(f, net.W)
