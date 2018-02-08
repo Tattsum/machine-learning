@@ -1,10 +1,8 @@
 # coding: UTF-8
 
 import numpy as np
-from common.softmax as softmax
-from common.sigmoid as sigmoid
-from common.cross_entropy_error as cross_entropy_error
-from common.gradient_descent as numerical_gradient
+from common.functions import *
+from common.gradient import numerical_gradient
 
 class TwoLayerNet:
 
@@ -53,5 +51,3 @@ class TwoLayerNet:
         grads['b2'] = numerical_gradient(loss_W, self.params['b2'])
 
         return grads
-
-        
