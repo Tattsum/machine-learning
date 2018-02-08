@@ -2,7 +2,7 @@
 
 import numpy as np
 def cross_entropy_error(y,t):
-    delta = le-7
+    delta = 1e-7
     return -np.sum(t*np.log(y+delta))
 
 # [2]を正解とする．
