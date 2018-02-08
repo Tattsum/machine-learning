@@ -1,6 +1,7 @@
 # coding: UTF-8
 
 import numpy as np
+import pickle
 from dataset.mnist import load_mnist
 
 def sigmoid(x):
@@ -18,7 +19,7 @@ def get_data():
     return x_test,t_test
 
 def init_network():
-    with open("sample_weight.plk",'rb') as f:
+    with open("sample_weight.pkl",'rb') as f:
         network = pickle.load(f)
 
     return network
@@ -35,3 +36,14 @@ def predict(network,x):
     y = softmax(a3)
 
     return y
+
+x, t = get_data()
+network = init_network()
+
+accuracy_cnt = 0
+for i in range(0):
+    y = predict(network,x[i])
+    p = np.argmax(y) # 最も確率の高い要素のインデックスを取得
+    if p == t[i]:
+        accuracy_cnt += 1
+print("Accuracy:" + str(float(accuracy_cnt)/len(x)))
