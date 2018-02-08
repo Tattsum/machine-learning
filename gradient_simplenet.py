@@ -1,9 +1,8 @@
 # coding: UTF-8
 
 import numpy as np
-from common.softmax import softmax
-from common.cross_entropy_error import cross_entropy_error
-from common.gradient_descent import numerical_gradient
+from common.functions import softmax, cross_entropy_error
+from common.gradient import numerical_gradient
 
 class simpleNet:
     def __init__(self):
