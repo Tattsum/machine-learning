@@ -21,3 +21,6 @@ plt.xlabel("x")
 plt.ylabel("f(x)")
 plt.plot(x, y)
 plt.show()
+
+print(numerical_diff(function_1, 5))
+print(numerical_diff(function_1, 10))
