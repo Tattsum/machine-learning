@@ -29,3 +29,9 @@ print (np.argmax(p)) # 最大値のインデックス
 
 t = np.array([0, 0, 1]) # 正解のラベル
 print(net.loss(x, t))
+
+def f(W):
+    return net.loss(x, t)
+
+dW = numerical_gradient(f, net.W)
+print(dW) 
